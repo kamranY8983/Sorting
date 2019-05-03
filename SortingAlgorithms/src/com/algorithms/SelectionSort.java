@@ -1,6 +1,6 @@
 package com.algorithms;
 
-public class SelectionSort {
+public class SelectionSort extends Sort {
 	
 	public static void sort(int[] a) {
 		
@@ -38,10 +38,6 @@ public class SelectionSort {
 		print(arr);
 	}
 	
-	public static void print(int[] a) {
-		for (int i : a) {
-			System.out.print(i +"  ");
-		}
-	}
+	
 	
 }
