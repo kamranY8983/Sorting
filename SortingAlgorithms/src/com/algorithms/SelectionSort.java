@@ -10,21 +10,21 @@ public class SelectionSort {
 		//Step 1: Select the smallest element
 		for (int i=0;i<n-1;i++) {
 			int min=i;  //smallest assume
+			
+			//compare with the remaining elements
 			for(int j=min+1;j<n;j++) {
 				if(a[min]>a[j]) {
 					min=j;
 				}
 			}
 			
-			
+			//swap with the minimum
 			if(a[min]!=a[i]) {
 				int temp=a[i];
 				a[i]=a[min];
 				a[min]=temp;
 			}
 		}
-		//swap it with the first elemnts
-		//select second smallest and swap it with second and so on
 		
 	}
 	
